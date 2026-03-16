@@ -1,7 +1,96 @@
-ul li{
-    list-style-type: none;
-    a{
-        text-decoration: overline;                      
-    }   
+@font-face {
+    font-family:'formal' ;
+    src: url(/BebasNeue-Regular.ttf);
 }
+/* CLASES */
+.centralizar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
+}
+
+.centralizar2 {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente na seção */
+    text-align: center;
+    min-height: 100vh;      /* Opcional: faz a seção ocupar a tela toda */
+}
+
+.headlist{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo_header{
+    height: 200px;
+}
+
+.header_class {
+  background-color: transparent;
+
+  a {
+    color: hsla(192, 44%, 37%, 0.984);
+
+    &::after {
+      color: rgba(17, 0, 255, 0.634);
+      text-decoration: none;
+    }
+     &:hover{
+        color: rgb(3, 20, 101);
+        text-decoration: underline;
+    }
+    @media (max-width:480px){
+        color:rgb(225, 101, 196);
+  }
+}
+}
+
+.hero {
+ 
+    button{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 60px;
+        border:solid 4px rgb(99, 101, 7);
+        box-shadow: 0 10px 20px rgb(118, 113, 24);
+        cursor:pointer;
+        color:rgb(1, 17, 17);
+        background-color: #e6b97c;
+        &:hover{
+            background-color: rgb(239, 224, 13);
+        }
+        &:active{
+            background-color: rgba(130, 175, 128, 0.457);
+        }
+    }
+}
+
+body{
+    background:
+    url("https://images5.alphacoders.com/711/thumb-1920-711093.jpg");
+    background-size: cover;
+    
+}
+
+.fotoperfil{
+    height: 300px;
+
+    }
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente em relação à foto */
+    gap: 10px;               /* Define EXATAMENTE 10px entre o texto e os botões */
+}
+
+
+
+
+
 
