@@ -5,6 +5,7 @@
 /* CLASES */
 .centralizar{
     display:flex;
+    color: rgb(189, 213, 180);
     justify-content: center;
     align-items: center;
     gap:30px;
@@ -20,22 +21,24 @@
     justify-content: center; /* Centraliza verticalmente na seção */
     text-align: center;
     min-height: 100vh;      /* Opcional: faz a seção ocupar a tela toda */
-}
+    }
 
 .headlist{
     list-style-type: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
 }
 
 .logo_header{
     height: 200px;
-}
+    }
 
 .header_class {
   background-color: transparent;
 
   a {
-    color: hsla(192, 44%, 37%, 0.984);
+    color: hsla(190, 4%, 31%, 0.984);
+    font-weight: bold;
 
     &::after {
       color: rgba(17, 0, 255, 0.634);
@@ -86,7 +89,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza verticalmente em relação à foto */
-    gap: 10px;               /* Define EXATAMENTE 10px entre o texto e os botões */
+    gap: 0px;               /* Define EXATAMENTE 10px entre o texto e os botões */
 }
 
 
